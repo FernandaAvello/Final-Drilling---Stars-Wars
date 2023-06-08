@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Wars</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/98eab6b928.js" crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="background">
+    <div class="container-fluid main py-5">
+      <h1 class="d-flex justify-content-center mb-5 title">Dimensiones de la vida real de los personajes de Star Wars.</h1>
+      <div class="row">
+        <div class="d-flex justify-content-end col-1" onmouseenter="getCharacterData('firstRow')">
+          <p id="number">1-5</p>
+        </div>
+        <div class="main-timeline col-11">
+          <div class="row timeline right" id="firstRow">
+            <div class="col-3 card firstCard me-2">
+              <div class="d-flex align-items-center card-title mt-3 ms-2">
+                <i class="fa-solid fa-jedi fa-xl me-2 firstRowIcon"></i>
+                <h5>En esta sección...</h5>
+              </div>
+              <div class="card-body p-0">
+                <p>Encontrarás información sobre los personajes más populares de las películas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="d-flex justify-content-end col-1" onmouseenter="getCharacterData('secondRow')">
+          <p id="number">6-11</p>
+        </div>
+        <div class="main-timeline col-11">
+          <div class="row timeline right" id="secondRow">
+            <div class="col-3 card secondCard me-2">
+              <div class="d-flex align-items-center card-title mt-3 ms-2">
+                <i class="fa-solid fa-jedi fa-xl me-2 secondRowIcon"></i>
+                <h5>En esta sección...</h5>
+              </div>
+              <div class="card-body p-0">
+                <p>Encontrarás información sobre personajes secundarios importantes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="d-flex justify-content-end col-1" onmouseenter="getCharacterData('thirdRow')">
+          <p id="number">12-17</p>
+        </div>
+        <div class="main-timeline col-11">
+          <div class="row timeline right" id="thirdRow">
+            <div class="col-3 card thirdCard me-2">
+              <div class="d-flex align-items-center card-title mt-3 ms-2">
+                <i class="fa-solid fa-jedi fa-xl me-2 thirdRowIcon"></i>
+                <h5>En esta sección...</h5>
+              </div>
+              <div class="card-body p-0">
+                <p>Encontrarás otros personajes significativos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>

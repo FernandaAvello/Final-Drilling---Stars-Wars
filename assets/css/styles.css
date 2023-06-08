@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Star-Jedi';
+  src: url('../fonts/Starjout.ttf') format("opentype");
+}
+
+.main-timeline {
+  position: relative;
+}
+.main-timeline::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  margin-left: -3px;
+}
+.timeline {
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  right: 1px;
+  background-color: #fff;
+  top: 18px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.right {
+  padding: 0px 0px 20px 40px;
+  left: auto;
+}
+.right::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #fff;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+}
+.right::after {
+  left: 1px;
+}
+.title {
+  color: white;
+  font-family: 'Star-jedi';
+}
+.background {
+  position: relative;
+}
+.background::before{
+  content: '';
+  filter: contrast(50%);
+  background-image: url('../img/background.png');
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1000;
+}
+#number {
+  color: white;
+  margin-top: 14px;
+}
+.firstRowIcon {
+  color: #fa8072
+}
+.secondRowIcon {
+  color: #90ee90;
+}
+.thirdRowIcon {
+  color: #87cefa;
+}
+.firstCard {
+  border: 3px solid #fa8072;
+}
+.secondCard {
+  border: 3px solid #90ee90;
+}
+.thirdCard {
+  border: 3px solid #87cefa;
+}
